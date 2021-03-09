@@ -172,18 +172,6 @@ def display_thinking_flash
   system "clear"
 end
 
-def dealer_turn_message
-  msg = "It is the dealers turn.... please wait"
-  3.times do
-    print "\r#{msg}"
-    sleep 0.5
-    print "\r#{' ' * msg.size}"
-    sleep 0.5
-  end
-  sleep(1)
-  system "clear"
-end
-
 def display_invalid_response
   display_divider
   puts "That is an invalid response. Please enter s for stay or h for hit"
